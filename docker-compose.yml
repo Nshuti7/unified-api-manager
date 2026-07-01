@@ -34,16 +34,12 @@ services:
       LINKEDIN_CLIENT_SECRET: ${LINKEDIN_CLIENT_SECRET:-}
       TWITTER_CLIENT_ID: ${TWITTER_CLIENT_ID:-}
       TWITTER_CLIENT_SECRET: ${TWITTER_CLIENT_SECRET:-}
-    ports:
-      - "8080:8080"
 
   frontend:
     build: ./frontend
     restart: unless-stopped
     depends_on:
       - backend
-    ports:
-      - "3000:80"
 
 volumes:
   postgres_data:
