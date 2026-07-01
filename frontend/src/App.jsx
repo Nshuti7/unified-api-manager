@@ -19,6 +19,9 @@ function Home() {
       <p className={`status status--${status}`}>
         Backend: {status}
       </p>
+      <a className="docs-link" href="/swagger-ui/index.html">
+        API docs
+      </a>
     </main>
   )
 }

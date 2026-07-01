@@ -41,3 +41,8 @@ body {
 .status--offline {
   color: #ef4444;
 }
+
+.docs-link {
+  margin-top: 1.5rem;
+  color: #38bdf8;
+}
